@@ -1,0 +1,22 @@
+@import '../commons/default.scss';
+
+.logo {
+  margin: 100px 20px;
+  text-align: center;
+
+  .logo__title {
+    font-size: 32px;
+  }
+
+  .logo__sub-title {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+}
+
+.comming-soon {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
