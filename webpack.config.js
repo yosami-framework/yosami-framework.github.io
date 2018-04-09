@@ -30,7 +30,7 @@ module.exports = [{
       }, {
         loader:  'html-loader',
         options: {
-          attrs:       ['img:src', 'link:href'],
+          attrs:       ['img:src', 'link:href', 'script:src'],
           minimize:    true,
           minifyCSS:   false,
           interpolate: true,
@@ -42,7 +42,7 @@ module.exports = [{
       use:     [{
         loader:  'file-loader',
         options: {
-          name: 'assets/css/[path][name].css',
+          name: '[path][name].css',
         },
       }, {
         loader: 'extract-loader',
@@ -59,13 +59,29 @@ module.exports = [{
         loader: 'sass-loader',
       }]
     }, {
+      test:    /\.js$/,
+      exclude: /node_modules/,
+      use:     [{
+        loader:  'file-loader',
+        options: {
+          name: '[path][name].js',
+        },
+      }, {
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            ['env', {targets: {browsers: ['last 2 versions', 'ie >= 10']}}],
+          ],
+        },
+      }]
+    }, {
       test:    /\.(png|woff|woff2|eot|ttf|svg|jpg)$/,
       exclude: /node_modules/,
       use:     [{
         loader:  'url-loader',
         options: {
           limit: 128,
-          name:  'assets/images/[hash].[ext]',
+          name:  '[path][hash].[ext]',
         },
       }]
     }],

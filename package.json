@@ -13,6 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^8.2.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.11",
     "cssnano": "^3.10.0",
     "extract-loader": "^2.0.1",
