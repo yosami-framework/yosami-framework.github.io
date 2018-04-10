@@ -1,0 +1,26 @@
+@import '../initializers/variables.scss';
+
+.cm-menu {
+  h1, h2, h3 {
+    margin: 18px 0 6px 0;
+    font-size: 16px;
+
+    &:first-child {
+      margin: 0 0 6px 0;
+    }
+  }
+
+  a {
+    display: block;
+    margin: 0 0 0 10px;
+    padding: 5px 0 5px 10px;
+    border-left: 3px solid $global-color-link;
+    font-size: 14px;
+    line-height: 18px;
+    transition: background-color 0.25s 0s ease;
+
+    &:hover {
+      background-color: $global-color-active;
+    }
+  }
+}

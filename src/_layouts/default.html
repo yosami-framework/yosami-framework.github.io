@@ -1,13 +1,26 @@
 <html>
   <head>
     <title>{{page.title}}</title>
+    <meta content='width=device-width,initial-scale=1,user-scalable=no' name='viewport' />
+    <link href='../assets/styles/htmls/layouts/default.scss' rel='stylesheet'>
   </head>
   <body>
-    <div id='menu' class='menu'></div>
+    <header class='header'>
+      <div class='header__inner'>
+        <h1 class='header__title'><a href='/'>Yosami</a></h1>
+        <div class='header__actions'>
+          <label class='header__actions__toggle' for='is-menu-display'>
+            <div></div><div></div><div></div>
+          </label>
+        </div>
+      </div>
+    </header>
 
-    <main>
-      {{content}}
-    </main>
+    <div class='content'>
+      <input id='is-menu-display' type='checkbox'>
+      <div id='menu' class='cm-menu content__menu'></div>
+      <main class='content__main'>{{content}}</main>
+    </div>
 
     <script src='../assets/javascripts/layouts/menu_loader.js'></script>
   </body>
