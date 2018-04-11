@@ -1,7 +1,9 @@
 @import '../../initializers/default.scss';
 @import '../../initializers/variables.scss';
+@import '../../commons/cm-markdown';
 @import '../../commons/cm-menu';
 @import '../../functions/is-mobile';
+@import '../../vendor/rouge';
 
 $max-width:    1000px;
 $header-height: 46px;

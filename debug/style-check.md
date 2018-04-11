@@ -48,6 +48,10 @@ This is `code.js`.
 
 ```javascript
 const javaripark = 'welcome to yokoso javaripark.';
+
+for (let i = 0; i < 100; ++i) {
+  this.hoge('fuga');
+}
 ```
 
 # Border
