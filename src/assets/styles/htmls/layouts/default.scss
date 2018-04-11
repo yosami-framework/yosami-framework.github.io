@@ -105,6 +105,7 @@ $header-height: 46px;
 
   .content__menu {
     flex: 0 0 240px;
+    z-index: 1;
   }
 
   .content__main {

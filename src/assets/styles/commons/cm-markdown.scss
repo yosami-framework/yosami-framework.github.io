@@ -3,12 +3,12 @@
   line-height: 1.35em;
 
   h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+    margin: 16px 0 5px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #ccc;
 
-    &:not(:first-child) {
-      margin: 16px 0 5px 0;
-      padding: 0 0 5px 0;
-      border-bottom: 1px solid #ccc;
+    &:first-child {
+      margin-top: 0;
     }
   }
 
@@ -17,12 +17,27 @@
   }
 
   pre {
-    margin: 24px 0;
+    margin: 8px 0 24px 0;
 
     code {
       display: block;
       width: 100%;
       overflow: auto;
+    }
+  }
+
+  table {
+    width: 100%;
+    margin: 8px 0 24px 0;
+    border: 1px solid #aaa;
+
+    thead {
+      background: #dfdfdf;
+    }
+
+    th, td {
+      padding: 3px;
+      border: 1px solid #dfdfdf;
     }
   }
 }
