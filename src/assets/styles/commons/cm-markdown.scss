@@ -1,0 +1,28 @@
+.cm-markdown {
+  position: relative;
+  line-height: 1.35em;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+
+    &:not(:first-child) {
+      margin: 16px 0 5px 0;
+      padding: 0 0 5px 0;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  pre {
+    margin: 24px 0;
+
+    code {
+      display: block;
+      width: 100%;
+      overflow: auto;
+    }
+  }
+}

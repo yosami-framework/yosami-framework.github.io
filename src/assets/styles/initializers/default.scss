@@ -5,6 +5,10 @@ html, body {
   width: 100%;
   margin: 0;
   font: 16px Roboto, "Helvetica Neue", Helvetica, Arial, "メイリオ", "Meiryo", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+html {
+  overflow: auto;
 
   @include is-mobile {
     overflow-x: hidden;
@@ -12,6 +16,7 @@ html, body {
 }
 
 body {
+  overflow: visible;
   color: $global-color-text;
   background: $global-color-background;
 }
