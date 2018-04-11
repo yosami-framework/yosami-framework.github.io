@@ -9,10 +9,19 @@
       const items = JSON.parse(xhr.responseText);
 
       items.forEach((item) => {
-        const a = document.createElement('a');
-        a.innerText = item.title;
-        a.href = item.path;
-        menu.appendChild(a);
+        switch(item.type) {
+        case "title":
+          const h = document.createElement('h2');
+          h.innerText = item.content;
+          menu.appendChild(h);
+          break;
+        case "link":
+          const a = document.createElement('a');
+          a.innerText = item.name;
+          a.href = item.path;
+          menu.appendChild(a);
+          break;
+        }
       });
     }
   }
