@@ -1,4 +1,5 @@
 [
   {"type": "title", "content": "基本的なつかいかた"},
   {"type": "link", "name": "はじめに", "path": "/ja"}
+  {"type": "link", "name": "インストール", "path": "/ja/install"}
 ]
