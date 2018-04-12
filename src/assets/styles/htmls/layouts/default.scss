@@ -6,7 +6,7 @@
 @import '../../vendor/rouge';
 
 $max-width:    1000px;
-$header-height: 46px;
+$header-height: 55px;
 
 .header {
   position: absolute;
@@ -16,13 +16,13 @@ $header-height: 46px;
   height: $header-height;
   box-shadow: 1px 0 2px $global-color-shadow;
   background: $global-color-background;
-  z-index: 1;
+  z-index: 10;
 
   .header__inner {
     display: flex;
     max-width: $max-width;
     margin: 0 auto;
-    padding: 0 6px;
+    padding: 0 12px;
 
     > * {
       &:nth-child(1) {
@@ -65,7 +65,7 @@ $header-height: 46px;
         position: absolute;
         right: 0;
         width: 100%;
-        height: 4px;
+        height: 3px;
         background: $global-color-link;
 
         &:nth-child(1) {
@@ -110,7 +110,7 @@ $header-height: 46px;
 
   .content__main {
     flex: 1 1 250px;
-    margin: 0 0 0 25px;
+    padding: 0 0 0 25px;
   }
 
   @include is-mobile {
@@ -129,6 +129,10 @@ $header-height: 46px;
       background: $global-color-background;
       transform: translate(100%, 0);
       transition: transform 0.25s 0s ease;
+    }
+
+    .content__main {
+      padding: 0 12px;
     }
   }
 }
