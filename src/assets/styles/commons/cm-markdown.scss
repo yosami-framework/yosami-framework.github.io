@@ -1,11 +1,12 @@
 .cm-markdown {
   position: relative;
-  line-height: 1.35em;
+  line-height: 1.4em;
   word-break: break-all;
 
   h1, h2, h3, h4 {
     border-bottom: 1px solid #ccc;
     line-height: 1em;
+    font-weight: normal;
 
     &:first-child {
       margin-top: 0;
@@ -14,13 +15,14 @@
 
   h1 {
     font-size: 24px;
-    margin: 36px 0 10px 0;
+    font-weight: bold;
+    margin: 42px 0 10px 0;
     padding: 0 0 10px 0;
   }
 
   h2 {
     font-size: 20px;
-    margin: 24px 0 8px 0;
+    margin: 32px 0 8px 0;
     padding: 0 0 8px 0;
   }
 
@@ -43,15 +45,15 @@
   }
 
   p {
-    margin: 5px 0;
+    margin: 10px 0;
   }
 
   pre {
     margin: 8px 0 24px 0;
+    border-left: 3px solid #2178a3;
 
     code {
       display: block;
-      width: 100%;
       overflow: auto;
     }
   }
