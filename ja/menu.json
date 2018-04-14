@@ -3,5 +3,6 @@
   {"type": "link", "name": "はじめに", "path": "/ja"},
   {"type": "link", "name": "インストール", "path": "/ja/install"},
   {"type": "title", "content": "チュートリアル"},
-  {"type": "link", "name": "1 - Hello world", "path": "/ja/tutorials/01_hello_world"}
+  {"type": "link", "name": "1 - Hello world", "path": "/ja/tutorials/01_hello_world"},
+  {"type": "link", "name": "2 - カウンターを作ろう", "path": "/ja/tutorials/02_counter"}
 ]
