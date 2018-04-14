@@ -8,7 +8,7 @@ title: 'チュートリアル01 Hello world - Yosami'
 
 まずは、画面に文字を表示する簡単なアプリケーションを作ってみましょう！
 
-今回のチュートリアルで作成したコードは[こちら](https://github.com/yosami-framework/yosami-tutorial/tree/master/01_hello_world)です。
+今回のチュートリアルで作成した[コード](https://github.com/yosami-framework/yosami-tutorial/tree/master/01_hello_world)と[デモ(SPA)](https://yosami-framework.github.io/demoes/01_hello_world/)です。
 
 ## コントローラの作成
 ページを表示するためにはコントローラがなければなりません。

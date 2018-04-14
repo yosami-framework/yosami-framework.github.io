@@ -19,7 +19,7 @@ Ruby on Rails に強く影響されたフレームワークであり、DRY原則
 
 Yosamiはその素晴らしい[Mithril](http://mithril-ja.js.org)をコアに使用したフレームワークです。Mithrilの機能を十分に発揮できるように設計しているため、**Mithrilが持つメリットはYosamiでも受けることができます**。
 
-軽量さはMithrilほどではないものの一般的なフレームワークよりも十分小さく、例えば[Nuxt.js](https://ja.nuxtjs.org/)は最小構成で53kb(min+gzip)ですが、**Yosamiは18kb(min+gzip)** です。
+軽量さはMithrilほどではないものの一般的なフレームワークよりも十分小さく、例えば[Nuxt.js](https://ja.nuxtjs.org/)は最小構成で53kb(min+gzip)ですが、**Yosamiは20kb(min+gzip)** です。
 
 ## 明確なレイヤー分離
 Yosamiはレイヤーを明確に分離するために、1ファイルにつき1レイヤーの規約でコードを書いていきます。
