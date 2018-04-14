@@ -92,10 +92,33 @@ onUp() {
 
 ビュー関数の `this` にはビューモデルのインスタンスがバインドされるため `this.count` でビューモデルの値を参照可能です。
 
-ここまで完成したらブラウザでアクセスしてみてください。
+## タイトルの修正
+タイトルにカウント数を表示してみます。
+
+カウントビュー(`app/views/controllers/counter.js`)を開き `module.exports = ...` のすぐ下にタイトルを変更する処理を書きます。
+
+```jsx
+module.exports = function(controller, pipe, _yield) {
+  pipe.title = `${this.count} clicks`;
+  return (
+  ...
+  );
+};
+```
+
+`pipe` とはビュー間でデータを受け渡すためのオブジェクトです。
+
+![パイプのコンセプト](/assets/images/concepts/viewmodel.png)
+
+`app/views/controller/application.js` 中に　`pipe.title`　をタイトルに設定する処理が記述されているため、
+カウントビューで `pipe.title` に指定した値がタイトルとして設定されます。
+
+
+さて、ついに完成しました早速ブラウザでアクセスしてみましょう！
+
+うまく動作したでしょうか？
 
 ----
-
 いかがでしたか？
 
 本チュートリアルでは、ビューモデルの定義とコントローラへのロジック記述、ビューに動的な値を埋め込む方法について説明しました。
