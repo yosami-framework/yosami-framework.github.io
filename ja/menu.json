@@ -1,5 +1,7 @@
 [
   {"type": "title", "content": "基本的なつかいかた"},
   {"type": "link", "name": "はじめに", "path": "/ja"},
-  {"type": "link", "name": "インストール", "path": "/ja/install"}
+  {"type": "link", "name": "インストール", "path": "/ja/install"},
+  {"type": "title", "content": "チュートリアル"},
+  {"type": "link", "name": "1 - Hello world", "path": "/ja/tutorials/01_hello_world"}
 ]
