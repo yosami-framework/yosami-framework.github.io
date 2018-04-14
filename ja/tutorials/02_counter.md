@@ -106,17 +106,16 @@ module.exports = function(controller, pipe, _yield) {
 };
 ```
 
-`pipe` とはビュー間でデータを受け渡すためのオブジェクトです。
+`pipe` とは複数のビュー間でデータを共有するためのオブジェクトです。
 
 ![パイプのコンセプト](/assets/images/concepts/pipe.png)
 
-`app/views/controller/application.js` 中に　`pipe.title`　をタイトルに設定する処理が記述されているため、
-カウントビューで `pipe.title` に指定した値がタイトルとして設定されます。
+pipeは次々と下層のレイヤーに渡されていきます。
 
+`pipe.title`は最下層のApplicationView(`app/views/controller/application.js`)でタイトルとして設定しているため、
+カウントビューで指定した値がタイトルに反映されます。
 
-さて、ついに完成しました早速ブラウザでアクセスしてみましょう！
-
-うまく動作したでしょうか？
+さて、ついに完成しました。早速ブラウザで動作確認してみましょう！
 
 ----
 いかがでしたか？
