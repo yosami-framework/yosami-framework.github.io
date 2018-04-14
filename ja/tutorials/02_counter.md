@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'チュートリアル01 Hello world - Yosami'
+title: 'チュートリアル02 カウンターを作ろう - Yosami'
 ---
 
 # チュートリアル02 カウンターを作ろう
@@ -108,7 +108,7 @@ module.exports = function(controller, pipe, _yield) {
 
 `pipe` とはビュー間でデータを受け渡すためのオブジェクトです。
 
-![パイプのコンセプト](/assets/images/concepts/viewmodel.png)
+![パイプのコンセプト](/assets/images/concepts/pipe.png)
 
 `app/views/controller/application.js` 中に　`pipe.title`　をタイトルに設定する処理が記述されているため、
 カウントビューで `pipe.title` に指定した値がタイトルとして設定されます。
