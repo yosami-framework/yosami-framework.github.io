@@ -98,7 +98,7 @@ onUp() {
 カウントビュー(`app/views/controllers/counter.js`)を開き `module.exports = ...` のすぐ下にタイトルを変更する処理を書きます。
 
 ```jsx
-module.exports = function(controller, pipe, _yield) {
+module.exports = function($, controller, pipe, _yield) {
   pipe.title = `${this.count} clicks`;
   return (
   ...
