@@ -4,18 +4,18 @@ title: 'チュートリアル04 バリデーション - Yosami'
 ---
 
 # チュートリアル04 バリデーション
-YosamiのモデルはRailsのようにバリデーションを定義することができます。
+Yosamiはとても簡単にバリデーションを定義することができます。
 
 今回は[チュートリアル2](/ja/tutorials/02_counter)で作成したアプリケーションを修正して、
 カウント数が5未満の場合はエラーを表示するようにしてみましょう！
 
-今回のチュートリアルで作成した[コード](https://github.com/yosami-framework/yosami-tutorial/tree/master/04_validation)と[デモ(SPA)](https://yosami-framework.github.io/demoes/04_validation)です。
+今回のチュートリアルで作成した[コード](https://github.com/yosami-framework/yosami-tutorial/tree/master/04_validation)と[デモ(SPA)](https://yosami-framework.github.io/demoes/04_validation/)です。
 
 ## 下準備
 まずは[チュートリアル2](/ja/tutorials/02_counter)に沿って、クリックでカウント数を増やすアプリケーションを作成してください！
 
 ## ビューモデルの修正
-前回作成したビューモデルにバリデーションを定義しましょう！`app/view_models/controllers/counter.js`を次のように修正します。
+ビューモデルにバリデーションを定義しましょう！`app/view_models/controllers/counter.js`を次のように修正します。
 
 ```javascript
 static definer() {
@@ -25,7 +25,7 @@ static definer() {
 }
 ```
 
-なお、すべての組み込みバリデータなどは(こちら)[/ja/concepts/validation]のページをご覧ください。
+なお、すべての組み込みバリデータなどは[こちら](/ja/concepts/validation)のページをご覧ください。
 
 
 ## バリデーションの実行
@@ -41,8 +41,8 @@ static definer() {
 const m = require('mithril');
 ```
 
-### バリデーションの実行
-バリデーションを実行し、完了時に`m.redraw`を呼び出して画面が再描画されるように`onUp`関数を修正します。
+### onUp関数の修正
+バリデーションが実行されるように`onUp`関数を修正しましょう！
 
 ```javascript
 onUp() {
@@ -51,12 +51,14 @@ onUp() {
 }
 ```
 
+バリデーション完了時に`m.redraw`を呼び出して画面が再描画されるようにしています。
+
 ## バリデーション結果の埋め込み
 バリデーションの結果が表示されるように`app/views/controllers/counter.js`を修正しましょう！
 
 `<button>`タグのすぐ下に埋め込みます。
 
-```javscript
+```jsx
 <div class='controllers/counter'>
   <p>{this.count} clicks</p>
   <button onclick={() => controller.onUp()}>CLICK</button>
@@ -78,9 +80,7 @@ en:
 
 以上で完成です。早速ブラウザで動作確認してみましょう！
 
-動作したでしょうか？
-
-余裕があれば[チュートリアル3](/ja/tutorials/03_i18n)と組み合わせてお住いの地域の言語でエラーメッセージが表示されるようにしてみてください！
+余裕があれば[チュートリアル3](/ja/tutorials/03_i18n)と組み合わせて他の言語でエラーメッセージが表示されるように実装してみてください！
 
 ----
 いかがでしたか？
