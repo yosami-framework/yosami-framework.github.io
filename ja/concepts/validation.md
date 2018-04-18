@@ -14,7 +14,7 @@ TrackModelを継承したクラスはバリデーションの仕組みも継承�
 ```javascript
 const TrackModel = require('track-model');
 
-class User < TrackModel
+class User extends TrackModel
   static definer() {
     name('user');
     accessor('name');
