@@ -5,5 +5,8 @@
   {"type": "title", "content": "チュートリアル"},
   {"type": "link", "name": "1 - Hello world", "path": "/ja/tutorials/01_hello_world"},
   {"type": "link", "name": "2 - カウンターを作ろう", "path": "/ja/tutorials/02_counter"},
-  {"type": "link", "name": "3 - 国際化(I18n)", "path": "/ja/tutorials/03_i18n"}
+  {"type": "link", "name": "3 - 国際化(I18n)", "path": "/ja/tutorials/03_i18n"},
+  {"type": "link", "name": "4 - バリデーション", "path": "/ja/tutorials/04_validation"},
+  {"type": "title", "content": "重要なコンセプト"},
+  {"type": "link", "name": "バリデーション", "path": "/ja/concepts/validation"}
 ]

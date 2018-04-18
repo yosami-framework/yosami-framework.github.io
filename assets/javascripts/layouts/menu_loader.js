@@ -4,7 +4,7 @@
   var lang = location.pathname.split('/')[1];
   var xhr = new XMLHttpRequest();
 
-  xhr.open('GET', '/' + (lang == '_layouts' ? 'ja' : lang) + '/menu.json');
+  xhr.open('GET', '/' + (lang == '_layouts' ? 'ja' : lang) + '/menu.json?' + Date.now());
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var menu = document.querySelector('#menu');

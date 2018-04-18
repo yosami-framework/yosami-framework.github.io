@@ -6,6 +6,8 @@ title: 'Yosami - Mithril.jsベースのSPA + SSRアプリケーション作成�
 # Yosamiとは
 Yosamiとは[Mithril](http://mithril-ja.js.org)をコアに使用した SPA + SSR アプリケーション作成のためのJavascriptフレームワークです。
 
+Yosamiは追加実装なしにIE10以降のすべてのブラウザで動作します。
+
 # 基本理念
 Ruby on Rails に強く影響されたフレームワークであり、DRY原則とCoC原則でアプリケーションを構築できること、Railsに慣れ親しんだエンジニアが違和感なく使えるシステムであることが基本理念です。
 
