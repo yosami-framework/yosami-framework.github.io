@@ -45,9 +45,9 @@ user.validateAll.then((result) => {
 });
 ```
 
-### errors
+### \#errors
 バリデーションエラーを取得します。
-バリデーション実行後、エラーが存在する場合に`Error`オブジェクトがセットされます。
+バリデーション実行後、エラーが存在する場合は属性と同じ名前のキーで`Error`オブジェクトがセットされます。
 
 ```javascript
 user.errors.name   // => Error

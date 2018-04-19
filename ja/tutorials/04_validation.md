@@ -29,29 +29,14 @@ static definer() {
 
 
 ## バリデーションの実行
-カウントを増やす際にバリデーションを実行するように、`app/controllers/counter_controller.js`を修正しましょう！
-
-### Mithrilのロード
-バリデーションは非同期で実行されるため、バリデーション完了時に画面の明示的な再描画が必要です。
-画面の再描画にはMithrilの`redraw`メソッドを呼び出す必要があるので`mithril`をロードします。
-
-ファイルの先頭に次のコードを追加します。
-
-```javascript
-const m = require('mithril');
-```
-
-### onUp関数の修正
-バリデーションが実行されるように`onUp`関数を修正しましょう！
+カウントを増やす際にバリデーションを実行するように、`app/controllers/counter_controller.js`の`onUp`関数を修正しましょう！
 
 ```javascript
 onUp() {
   this.vm.count++;
-  this.vm.validateAll().then(m.redraw);
+  this.vm.validateAll();
 }
 ```
-
-バリデーション完了時に`m.redraw`を呼び出して画面が再描画されるようにしています。
 
 ## バリデーション結果の埋め込み
 バリデーションの結果が表示されるように`app/views/controllers/counter.js`を修正しましょう！
