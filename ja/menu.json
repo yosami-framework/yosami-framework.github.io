@@ -8,5 +8,6 @@
   {"type": "link", "name": "3 - 国際化(I18n)", "path": "/ja/tutorials/03_i18n"},
   {"type": "link", "name": "4 - バリデーション", "path": "/ja/tutorials/04_validation"},
   {"type": "title", "content": "重要なコンセプト"},
+  {"type": "link", "name": "プロジェクト構造", "path": "/ja/concepts/project_structure"},
   {"type": "link", "name": "バリデーション", "path": "/ja/concepts/validation"}
 ]
