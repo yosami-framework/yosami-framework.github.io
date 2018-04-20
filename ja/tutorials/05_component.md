@@ -56,11 +56,11 @@ module.exports = class SwitchComponent extends ApplicationComponent {
 
 `oninit`は[Mithrilのライフサイクルメソッド](http://mithril-ja.js.org/lifecycle-methods.html)です。
 YosamiのコンポーネントではMithrilのライフサイクルメソッドが呼び出し可能です。
-ただし呼び出す際には`super`で基底クラスを呼び出してください。
+ただし呼び出す際には`super`で基底クラスの実装を呼び出してください。
 
 
 ## スイッチコンポーネントのビューとスタイルを修正
-コンポーネントのビューとスタイルを修正しスイッチを表示します。
+コンポーネントのビューとスタイルを修正してスイッチを表示します。
 
 `app/views/components/switch.js`
 ```jsx
