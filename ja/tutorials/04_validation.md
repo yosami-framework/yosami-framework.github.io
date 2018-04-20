@@ -25,7 +25,7 @@ static definer() {
 }
 ```
 
-なお、すべての組み込みバリデータなどは[こちら](/ja/concepts/validation)のページをご覧ください。
+なお、すべての組み込みバリデータは[こちら](/ja/concepts/validation)のページをご覧ください。
 
 
 ## バリデーションの実行
