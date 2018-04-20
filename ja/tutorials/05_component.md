@@ -9,19 +9,6 @@ title: 'チュートリアル05 コンポーネント - Yosami'
 
 今回のチュートリアルで作成した[コード](https://github.com/yosami-framework/yosami-tutorial/tree/master/05_component)と[デモ(SPA)](https://yosami-framework.github.io/demoes/05_component/)です。
 
-# コントローラの作成とルートの定義
-スイッチコントローラを作成し、ルートを `/` に設定します。
-[チュートリアル1](/ja/tutorials/01_hello_world)で解説したため、詳細は割愛します。
-
-```shell
-$ npm run generate controller switches
-```
-
-```javascript
-TrackRouter.configure(() => {
-  get('/', {to: 'switches', as: 'root'});
-});
-```
 
 # コンポーネントの作成
 コンポーネントジェネレータでコンポーネントの雛形を生成します。
@@ -46,7 +33,7 @@ static definer() {
 ```
 
 ## スイッチコンポーネントを修正
-コンポーネント初期化時にカウントに0をセットし、カウントを増やすための`onUp`関数をスイッチコンポーネントに実装します。
+コンポーネント初期化時にカウント数をクリアし、カウントを増やすための`onUp`関数をスイッチコンポーネントに実装します。
 
 `app/components/switch.js`
 
@@ -110,8 +97,23 @@ YosamiのコンポーネントではMithrilのライフサイクルメソッド�
 };
 ```
 
-# コントローラのビューを修正
-コントローラのビューに作成したコンポーネントを埋め込みます。
+# コントローラの作成
+スイッチコントローラを作成し、ルートを `/` に設定します。
+[チュートリアル1](/ja/tutorials/01_hello_world)で解説したため、詳細は割愛します。
+
+```shell
+$ npm run generate controller switches
+```
+
+```javascript
+TrackRouter.configure(() => {
+  get('/', {to: 'switches', as: 'root'});
+});
+```
+
+
+## コントローラのビューを修正
+コントローラのビューにさきほど作成したコンポーネントを埋め込みます。
 
 `app/views/controllers/switches.js`
 
