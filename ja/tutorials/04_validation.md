@@ -56,7 +56,7 @@ onUp() {
 ## ロケールファイルの作成
 `config/locales/en.yml`にエラーを定義します。
 
-```en
+```yaml
 en:
   track_model:
     errors:
