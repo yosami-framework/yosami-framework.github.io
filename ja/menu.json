@@ -10,5 +10,6 @@
   {"type": "link", "name": "5 - コンポーネント", "path": "/ja/tutorials/05_component"},
   {"type": "title", "content": "重要なコンセプト"},
   {"type": "link", "name": "プロジェクト構造", "path": "/ja/concepts/project_structure"},
+  {"type": "link", "name": "ルーティング", "path": "/ja/concepts/routing"},
   {"type": "link", "name": "バリデーション", "path": "/ja/concepts/validation"}
 ]
