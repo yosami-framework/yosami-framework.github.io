@@ -71,7 +71,7 @@ oninit(...args) {
 }
 ```
 
-## onattrschanged
+## \#onattrschanged
 コンポーネントの属性が変更された時に呼び出されるフックです。
 
 ```javascript

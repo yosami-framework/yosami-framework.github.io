@@ -11,6 +11,7 @@
   {"type": "title", "content": "重要なコンセプト"},
   {"type": "link", "name": "プロジェクト構造", "path": "/ja/concepts/project_structure"},
   {"type": "link", "name": "コンポーネント", "path": "/ja/concepts/component"},
+  {"type": "link", "name": "コンポーネント", "path": "/ja/concepts/controller"},
   {"type": "link", "name": "ルーティング", "path": "/ja/concepts/routing"},
   {"type": "link", "name": "バリデーション", "path": "/ja/concepts/validation"}
 ]
