@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 'チュートリアル02 カウンターを作ろう - Yosami'
+title: 'チュートリアル02 カウンターを作る - Yosami'
 ---
 
-# チュートリアル02 カウンターを作ろう
+# チュートリアル02 カウンターを作る
 今回はボタンをクリックすると、クリックした回数を数えるカウンターを作ってみましょう！
 
 今回のチュートリアルで作成した[コード](https://github.com/yosami-framework/yosami-tutorial/tree/master/02_counter)と[デモ(SPA)](https://yosami-framework.github.io/demoes/02_counter/)です。

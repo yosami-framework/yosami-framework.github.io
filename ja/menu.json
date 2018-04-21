@@ -4,14 +4,14 @@
   {"type": "link", "name": "インストール", "path": "/ja/install"},
   {"type": "title", "content": "チュートリアル"},
   {"type": "link", "name": "1 - Hello world", "path": "/ja/tutorials/01_hello_world"},
-  {"type": "link", "name": "2 - カウンターを作ろう", "path": "/ja/tutorials/02_counter"},
+  {"type": "link", "name": "2 - カウンターを作る", "path": "/ja/tutorials/02_counter"},
   {"type": "link", "name": "3 - 国際化(I18n)", "path": "/ja/tutorials/03_i18n"},
   {"type": "link", "name": "4 - バリデーション", "path": "/ja/tutorials/04_validation"},
   {"type": "link", "name": "5 - コンポーネント", "path": "/ja/tutorials/05_component"},
   {"type": "title", "content": "重要なコンセプト"},
   {"type": "link", "name": "プロジェクト構造", "path": "/ja/concepts/project_structure"},
   {"type": "link", "name": "コンポーネント", "path": "/ja/concepts/component"},
-  {"type": "link", "name": "コンポーネント", "path": "/ja/concepts/controller"},
+  {"type": "link", "name": "コントローラ", "path": "/ja/concepts/controller"},
   {"type": "link", "name": "ルーティング", "path": "/ja/concepts/routing"},
   {"type": "link", "name": "バリデーション", "path": "/ja/concepts/validation"}
 ]
