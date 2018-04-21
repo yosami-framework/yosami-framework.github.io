@@ -14,7 +14,7 @@ Yosamiはとても簡単にバリデーションを定義することができ�
 ## 下準備
 まずは[チュートリアル2](/ja/tutorials/02_counter)に沿って、クリックでカウント数を増やすアプリケーションを作成してください！
 
-## ビューモデルの修正
+## バリデーション定義
 ビューモデルにバリデーションを定義しましょう！`app/view_models/controllers/counter.js`を次のように修正します。
 
 ```javascript
@@ -29,7 +29,7 @@ static definer() {
 
 
 ## バリデーションの実行
-カウントを増やす際にバリデーションを実行するように、`app/controllers/counter_controller.js`の`onUp`関数を修正しましょう！
+バリデーションが実行されるように、`app/controllers/counter_controller.js`の`onUp`関数を修正しましょう！
 
 ```javascript
 onUp() {
